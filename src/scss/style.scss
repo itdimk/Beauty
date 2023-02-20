@@ -1,5 +1,104 @@
-﻿$color: lightcoral;
+﻿@import "variables";
+@import "functions";
+@import "utility";
+@import "reset";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 body {
-  background-color: $color;
+  font-family: $ff-regular;
+}
+
+.container {
+  max-width: min(#{$max-width}, 100% - #{$container-padding} * 2);
+  margin-inline: auto;
+}
+
+.nav {
+  padding: pixToRem(17) 0;
+}
+
+.nav__items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: pixToRem(30);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .head__logo {
+    display: flex;
+    margin-block: pixToRem(20);
+    align-items: center;
+    gap: pixToRem(20);
+
+    .head__title {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-size: pixToRem(36);
+    }
+  }
+
+  .head__contacts {
+    @include list-flex(pixToRem(40));
+  }
+}
+
+.services {
+  width: 100%;
+  border-top: 1px solid $clr-neutral-200;
+
+  .services__items {
+    @include list-flex(pixToRem(40));
+    margin-block: pixToRem(30);
+  }
+}
+
+.button {
+  border: 2px solid $clr-primary-400;
+  border-radius: pixToRem(40);
+  padding: pixToRem(12) pixToRem(26);
+}
+
+.button.inverted {
+  border-color: $clr-neutral-100;
+  padding: pixToRem(12) pixToRem(46);
+  letter-spacing: 0.05rem;
+}
+
+.hero {
+  background-image: url("../img/super-chair.png");
+  background-position: center;
+  min-height: 604px;
+
+  .container {
+    min-height: 604px;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: pixToRem(50);
+    max-width: 42ch;
+    min-height: 604px;
+  }
+
+  .hero__title {
+    font-size: pixToRem(48);
+  }
+
+  .hero__description {
+    font-size: pixToRem(14);
+  }
 }

@@ -1,5 +1,6 @@
 ﻿const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const mode = 'development'
 
@@ -11,6 +12,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             minify: mode === 'development'
+        }),
+        new CopyPlugin({
+            patterns: [
+                {from: path.resolve(__dirname, "src/img")},
+            ],
         }),
     ],
     mode: mode,
