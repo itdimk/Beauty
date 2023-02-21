@@ -1,8 +1,18 @@
 ﻿@import 'common/variables';
 @import 'common/functions';
+@import "logo";
+@import "hamburger";
+@import "phone-number";
+@import "button";
+
+.header {
+  position: relative;
+}
 
 .header__nav {
-  padding: pixToRem(17) 0;
+  padding: 1rem 0;
+  font-size: pixToRem(14);
+  background-color: $clr-neutral-200;
   color: $clr-neutral-800;
 }
 
@@ -18,35 +28,39 @@
 .header__company {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  padding-block: pixToRem(20);
+}
 
-  .header__logo {
-    display: flex;
-    margin-block: pixToRem(20);
-    align-items: center;
-    gap: pixToRem(20);
-
-    .header_title {
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      font-size: pixToRem(36);
-      font-weight: $fw-700;
-      color: $clr-primary-400
-    }
-  }
-
-  .header__contacts {
-    @include flex-row(pixToRem(40));
-  }
+.header__hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .header__services {
   width: 100%;
   border-top: 1px solid $clr-neutral-200;
+  padding-block: pixToRem(15);
 
   .header__services-items {
     @include flex-row(pixToRem(40));
-    margin-block: pixToRem(30);
+    flex-wrap: wrap;
   }
 }
 
+
+@media only screen and (max-width: $mobile-breakpoint) {
+
+  .header__nav-items {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .header__nav {
+    min-height: 4rem;
+  }
+}

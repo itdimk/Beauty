@@ -1,28 +1,42 @@
 ﻿@import 'common/variables';
 @import 'common/functions';
+@import "button";
 
 .footer {
   @include flex-row(unset);
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-block: pixToRem(37);
-
-  .footer_social-widgets {
-    @include flex-row(pixToRem(16))
-  }
-
-  .footer__call {
-    @include flex-row(pixToRem(40))
-  }
 }
+
+.footer__social-widgets {
+  @include flex-row(pixToRem(16))
+}
+
 
 .footer-bottom {
   padding-block: pixToRem(25);
   background-color: $clr-neutral-200;
   font-size: pixToRem(12);
   color: #828282;
-  
+
   .container {
     @include flex-row(unset);
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    flex-direction: column;
+  }
+  
+  .footer-bottom>.container {
+   flex-direction: column; 
+    gap: 0.5rem;
+  }
+
+  .footer__address {
+    margin-block: 2rem 1.5rem;
   }
 }

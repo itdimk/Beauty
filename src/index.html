@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,35 +14,42 @@
 <body>
 
 <header class="header">
-    <div class="container">
-        <nav class="header__nav">
-            <ul class="header__nav-items">
-                <li class="header__nav-item">
-                    <a href="#">Доставка</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#">Оплата</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#">Отзывы</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#">Вопрос - ответ</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+    <nav class="header__nav">
 
+        <ul class="header__nav-items">
+            <li class="header__nav-item">
+                <a href="#">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">Оплата</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">Вопрос - ответ</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+
+        <span class="header__hamburger hamburger" onclick="toggleNavbar()">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </span>
+    </nav>
+
+    <div class="container">
         <div class="header__company">
-            <section class="header__logo">
-                <img class="header__icon" src="logo.svg" alt="Beauty">
-                <p class="header_title">Beauty</p>
+            <section class="logo">
+                <img class="logo__icon" src="logo.svg" alt="Beauty">
+                <p class="logo__title">Beauty</p>
             </section>
-            <section class="header__contacts">
+            <section class="phone-number">
                 <a href="tel: +78121234567">8 (812) 123-45-67</a>
-                <a class="header__button button" href="#">Обратный звонок</a>
+                <a class="button" href="#">Обратный звонок</a>
             </section>
         </div>
     </div>
@@ -64,7 +74,7 @@
                 Текст акции всегда отражает суть, а не просто
                 болтовню, поэтому внимательнее
             </p>
-            <a class="hero__button button inverted" href="#">
+            <a class="button button-inverted-wide" href="#">
                 Подробнее
             </a>
         </div>
@@ -75,37 +85,37 @@
     <div class="container">
         <h3 class="offers__title">Специальные предложения</h3>
         <ul class="offers__cards">
-            <li class="offers__card">
-                <img src="chair.png" alt="" class="offers__image">
-                <p class="offers__description">
+            <li class="card">
+                <img class="card__image" src="chair.png" alt="">
+                <p class="card__description">
                     Парикмахерское кресло «Норм» гидравлическое
                 </p>
-                <span class="offers__price">9 900 ₽</span>
-                <a href="#" class="offers__button-buy button-buy">Купить</a>
+                <span class="card__price">9 900 ₽</span>
+                <a href="#" class="button button-buy">Купить</a>
             </li>
-            <li class="offers__card">
-                <img src="chair.png" alt="" class="offers__image">
-                <p class="offers__description">
+            <li class="card">
+                <img src="chair.png" alt="" class="card__image">
+                <p class="card__description">
                     Парикмахерское кресло «Норм» гидравлическое
                 </p>
-                <span class="offers__price">9 900 ₽</span>
-                <a href="#" class="offers__button-buy button-buy">Купить</a>
+                <span class="card__price">9 900 ₽</span>
+                <a href="#" class="button button-buy">Купить</a>
             </li>
-            <li class="offers__card">
-                <img src="chair.png" alt="" class="offers__image">
-                <p class="offers__description">
+            <li class="card">
+                <img src="chair.png" alt="" class="card__image">
+                <p class="card__description">
                     Парикмахерское кресло «Норм» гидравлическое
                 </p>
-                <span class="offers__price">9 900 ₽</span>
-                <a href="#" class="offers__button-buy button-buy">Купить</a>
+                <span class="card__price">9 900 ₽</span>
+                <a href="#" class="button button-buy">Купить</a>
             </li>
-            <li class="offers__card">
-                <img src="chair.png" alt="" class="offers__image">
-                <p class="offers__description">
+            <li class="card">
+                <img src="chair.png" alt="" class="card__image">
+                <p class="card__description">
                     Парикмахерское кресло «Норм» гидравлическое
                 </p>
-                <span class="offers__price">9 900 ₽</span>
-                <a href="#" class="offers__button-buy button-buy">Купить</a>
+                <span class="card__price">9 900 ₽</span>
+                <a href="#" class="button button-buy">Купить</a>
             </li>
         </ul>
     </div>
@@ -137,7 +147,7 @@
                         Более 300 магазинов <br>
                         по всей России
                     </p>
-                    <a href="#" class="button inverted promo__button">
+                    <a href="#" class="button button-inverted promo__button">
                         Карта магазинов
                     </a>
                 </div>
@@ -148,26 +158,26 @@
 
 <div class="container">
     <footer class="footer">
-        <div class="footer_social-widgets">
-            <a href="#" class="social-button">
+        <div class="footer__social-widgets">
+            <a href="#" class="button button-social">
                 <img src="social-widgets/youtube.svg">
             </a>
-            <a href="#" class="social-button">
+            <a href="#" class="button button-social">
                 <img src="social-widgets/vk.svg">
             </a>
-            <a href="#" class="social-button">
+            <a href="#" class="button button-social">
                 <img src="social-widgets/facebook.svg">
             </a>
-            <a href="#" class="social-button">
+            <a href="#" class="button button-social">
                 <img src="social-widgets/instagram.svg">
             </a>
         </div>
         <p class="footer__address">
             198555, Невский пр. 140, офис 140
         </p>
-        <div class="footer__call">
+        <div class="footer__phone-number phone-number">
             <a href="tel: +78121234567">8 (812) 123-45-67</a>
-            <a class="footer__button button" href="#">Обратный звонок</a>
+            <a class="button" href="#">Обратный звонок</a>
         </div>
     </footer>
 </div>

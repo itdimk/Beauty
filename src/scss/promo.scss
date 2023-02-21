@@ -9,6 +9,7 @@
 
 .promo__cards {
   @include flex-row(pixToRem(30));
+  flex-wrap: wrap;
   align-items: stretch;
   padding: 0;
   margin: 0;
@@ -20,6 +21,7 @@
   background-color: $clr-primary-400;
   color: $clr-neutral-100;
   padding: pixToRem(35) pixToRem(40);
+  width: 100%;
   flex: 1;
   
   .promo__left {
@@ -44,6 +46,6 @@
   }
   
   .promo__button {
-    padding: pixToRem(9) pixToRem(28);
+    min-width: max-content;
   }
 }

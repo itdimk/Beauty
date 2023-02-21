@@ -1,0 +1,29 @@
+﻿@import 'common/variables';
+@import 'common/functions';
+
+.card {
+  background-color: $clr-neutral-100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: pixToRem(20);
+  border: 1px solid transparent;
+  transition: border-color 0.5s ease;
+  padding: pixToRem(25) pixToRem(40);
+}
+
+.card:hover {
+  border-color: $clr-primary-400
+}
+
+.card__description {
+  font-size: pixToRem(14);
+  max-width: 22ch;
+  text-align: center;
+}
+
+.card__price {
+  font-weight: $fw-500;
+  font-size: pixToRem(21);
+  letter-spacing: 0.05rem;
+}

@@ -1,0 +1,40 @@
+﻿@import "common/variables";
+@import "common/functions";
+
+.button {
+  border-radius: pixToRem(40);
+  border: 2px solid $clr-primary-400;
+  padding: pixToRem(12) pixToRem(26);
+  font-size: pixToRem(14);
+
+  &.button-buy {
+    padding: pixToRem(9) pixToRem(40);
+    font-size: pixToRem(14);
+    background-color: $clr-primary-400;
+    color: $clr-neutral-100;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &.button-inverted {
+    border-color: $clr-neutral-100;
+  }
+
+  &.button-inverted-wide {
+    border-color: $clr-neutral-100;
+    padding: pixToRem(12) pixToRem(48);
+    letter-spacing: 0.05rem;
+  }
+
+  &.button-social {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: pixToRem(45);
+    min-height: pixToRem(45);
+    border-radius: 50%;
+  }
+}
+

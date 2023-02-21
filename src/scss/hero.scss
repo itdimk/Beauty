@@ -28,9 +28,15 @@
   .hero__description {
     font-size: pixToRem(14);
   }
-  
+
   .hero__button {
     padding-inline: pixToRem(45);
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .hero {
+    background-position: 62%;
   }
 }
 

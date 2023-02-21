@@ -1,0 +1,14 @@
+﻿@import "common/variables";
+@import "common/functions";
+
+.logo {
+  @include flex-row(pixToRem(20));
+
+  .logo__title {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: pixToRem(36);
+    font-weight: $fw-700;
+    color: $clr-primary-400
+  }
+}

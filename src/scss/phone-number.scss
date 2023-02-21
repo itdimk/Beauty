@@ -1,0 +1,13 @@
+﻿@import 'common/variables';
+@import 'common/functions';
+
+.phone-number {
+  @include flex-row(pixToRem(40));
+  flex-wrap: wrap;
+}
+
+.phone-number__button {
+  border: 2px solid $clr-primary-400;
+  border-radius: pixToRem(40);
+  padding: pixToRem(12) pixToRem(26);
+}
