@@ -6,11 +6,20 @@ $clr-neutral-900: #000000;
 $clr-neutral-100: #FFFFFF;
 
 // Font-weight
-$fw-regular: 400;
-$fw-bold: 700;
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
 
 // Font-family
 $ff-regular: 'Roboto', sans-serif;
+
+// Line height
+$lh-regular: 1.143;
+$lh-bigger: 1.43;
+
+// Letter spacing
+$ls-5: 0.05rem;
+$ls-10: 0.1rem;
 
 // Container
 $max-width: 1110px;

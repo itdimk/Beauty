@@ -1,0 +1,36 @@
+﻿@import 'common/variables';
+@import 'common/functions';
+
+.hero {
+  background-image: url("../img/super-chair.png");
+  background-position: center;
+  min-height: 604px;
+  color: $clr-neutral-100;
+
+  .container {
+    min-height: 604px;
+  }
+
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: pixToRem(50);
+    max-width: 42ch;
+    min-height: 604px;
+  }
+
+  .hero__title {
+    font-size: pixToRem(48);
+  }
+
+  .hero__description {
+    font-size: pixToRem(14);
+  }
+  
+  .hero__button {
+    padding-inline: pixToRem(45);
+  }
+}
+

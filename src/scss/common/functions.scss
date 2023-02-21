@@ -1,0 +1,22 @@
+﻿@use "sass:math";
+
+@function pixToRem($pixels) {
+  @return math.div($pixels, 16) + rem;
+}
+
+@mixin flex-row($gap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: $gap
+}
+
+@mixin flex-col($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: $gap
+}

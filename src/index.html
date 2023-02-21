@@ -5,70 +5,180 @@
     <title>Beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="ff-regular fw-regular color-black lh-regular">
+<body>
+
 <header class="header">
-
-    <nav class="nav bg-neutral-200 color-dark">
-        <ul class="nav__items">
-            <li class="nav__item">
-                <a href="#">Доставка</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">Оплата</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">Отзывы</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">Вопрос - ответ</a>
-            </li>
-            <li class="nav-item">
-                <a href="#">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-
     <div class="container">
-        <div class="head">
-            <section class="head__logo">
-                <img class="head__icon" src="logo.svg" alt="Beauty">
-                <p class="head__title fw-bold color-primary-400">Beauty</p>
+        <nav class="header__nav">
+            <ul class="header__nav-items">
+                <li class="header__nav-item">
+                    <a href="#">Доставка</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#">Оплата</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#">Вопрос - ответ</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__company">
+            <section class="header__logo">
+                <img class="header__icon" src="logo.svg" alt="Beauty">
+                <p class="header_title">Beauty</p>
             </section>
-            <section class="head__contacts">
-                <a class="head__phone" href="tel: +78121234567">8 (812) 123-45-67</a>
-                <a class="button" href="#">Обратный звонок</a>
+            <section class="header__contacts">
+                <a href="tel: +78121234567">8 (812) 123-45-67</a>
+                <a class="header__button button" href="#">Обратный звонок</a>
             </section>
         </div>
     </div>
 
-    <section class="services">
-        <ul class="services__items">
-            <li class="services__item"><a href="#">Парикмахерская</a></li>
-            <li class="services__item"><a href="#">Барбершоп</a></li>
-            <li class="services__item"><a href="#">Маникюр</a></li>
-            <li class="services__item"><a href="#">Педикюр</a></li>
-            <li class="services__item"><a href="#">Массаж</a></li>
-            <li class="services__item"><a href="#">Мебель</a></li>
+    <section class="header__services">
+        <ul class="header__services-items">
+            <li class="header__services-item"><a href="#">Парикмахерская</a></li>
+            <li class="header__services-item"><a href="#">Барбершоп</a></li>
+            <li class="header__services-item"><a href="#">Маникюр</a></li>
+            <li class="header__services-item"><a href="#">Педикюр</a></li>
+            <li class="header__services-item"><a href="#">Массаж</a></li>
+            <li class="header__services-item"><a href="#">Мебель</a></li>
         </ul>
     </section>
-
-    <section class="hero color-white">
-        <div class="container">
-            <div class="hero__text">
-                <h1 class="hero__title fw-bold">Супер кресло</h1>
-                <p class="hero__description lh-bigger">
-                    Текст акции всегда отражает суть, а не просто
-                    болтовню, поэтому внимательнее
-                </p>
-                <a class="hero__button button inverted" href="#">
-                    Подробнее
-                </a>
-            </div>
-        </div>
-    </section>
 </header>
+
+<main class="hero">
+    <div class="container">
+        <div class="hero__info">
+            <h1 class="hero__title">Супер кресло</h1>
+            <p class="hero__description lh-bigger">
+                Текст акции всегда отражает суть, а не просто
+                болтовню, поэтому внимательнее
+            </p>
+            <a class="hero__button button inverted" href="#">
+                Подробнее
+            </a>
+        </div>
+    </div>
+</main>
+
+<section class="offers">
+    <div class="container">
+        <h3 class="offers__title">Специальные предложения</h3>
+        <ul class="offers__cards">
+            <li class="offers__card">
+                <img src="chair.png" alt="" class="offers__image">
+                <p class="offers__description">
+                    Парикмахерское кресло «Норм» гидравлическое
+                </p>
+                <span class="offers__price">9 900 ₽</span>
+                <a href="#" class="offers__button-buy button-buy">Купить</a>
+            </li>
+            <li class="offers__card">
+                <img src="chair.png" alt="" class="offers__image">
+                <p class="offers__description">
+                    Парикмахерское кресло «Норм» гидравлическое
+                </p>
+                <span class="offers__price">9 900 ₽</span>
+                <a href="#" class="offers__button-buy button-buy">Купить</a>
+            </li>
+            <li class="offers__card">
+                <img src="chair.png" alt="" class="offers__image">
+                <p class="offers__description">
+                    Парикмахерское кресло «Норм» гидравлическое
+                </p>
+                <span class="offers__price">9 900 ₽</span>
+                <a href="#" class="offers__button-buy button-buy">Купить</a>
+            </li>
+            <li class="offers__card">
+                <img src="chair.png" alt="" class="offers__image">
+                <p class="offers__description">
+                    Парикмахерское кресло «Норм» гидравлическое
+                </p>
+                <span class="offers__price">9 900 ₽</span>
+                <a href="#" class="offers__button-buy button-buy">Купить</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="promo">
+    <div class="container">
+        <ul class="promo__cards">
+            <li class="promo__card">
+                <div class="promo__left">
+                    <h3 class="promo__title">Получайте бонусы и подарки</h3>
+                    <p class="promo__description">
+                        Каждый месяц разыгрываем <br>
+                        10 000 рублей для наших клиентов
+                    </p>
+                    <form>
+                        <input type="email" class="promo__email" placeholder="Введите e-mail"/>
+                    </form>
+                </div>
+                <div class="promo__right">
+                    <img src="envelope.svg" alt="envelope">
+                </div>
+            </li>
+
+            <li class="promo__card">
+                <div class="promo__left">
+                    <h3 class="promo__title">Заходите к нам</h3>
+                    <p class="promo__description">
+                        Более 300 магазинов <br>
+                        по всей России
+                    </p>
+                    <a href="#" class="button inverted promo__button">
+                        Карта магазинов
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="container">
+    <footer class="footer">
+        <div class="footer_social-widgets">
+            <a href="#" class="social-button">
+                <img src="social-widgets/youtube.svg">
+            </a>
+            <a href="#" class="social-button">
+                <img src="social-widgets/vk.svg">
+            </a>
+            <a href="#" class="social-button">
+                <img src="social-widgets/facebook.svg">
+            </a>
+            <a href="#" class="social-button">
+                <img src="social-widgets/instagram.svg">
+            </a>
+        </div>
+        <p class="footer__address">
+            198555, Невский пр. 140, офис 140
+        </p>
+        <div class="footer__call">
+            <a href="tel: +78121234567">8 (812) 123-45-67</a>
+            <a class="footer__button button" href="#">Обратный звонок</a>
+        </div>
+    </footer>
+</div>
+<footer class="footer-bottom">
+    <div class="container">
+        <p class="footer-bottom__copyright">
+            Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для
+            салонов красоты
+        </p>
+        <a href="#" class="footer-bottom__privacy">Политика конфиденциальности</a>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,49 @@
+﻿@import 'common/variables';
+@import 'common/functions';
+
+.promo {
+  padding-top: 100px;
+  padding-bottom: 132px;
+  background-color: $clr-neutral-200;
+}
+
+.promo__cards {
+  @include flex-row(pixToRem(30));
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+}
+
+.promo__card {
+  @include flex-row(pixToRem(65));
+  justify-content: space-between;
+  background-color: $clr-primary-400;
+  color: $clr-neutral-100;
+  padding: pixToRem(35) pixToRem(40);
+  flex: 1;
+  
+  .promo__left {
+    @include flex-col(pixToRem(25));
+    align-items: flex-start;
+  }
+  
+  .promo__email {
+    padding: pixToRem(9) pixToRem(25);
+    border-radius: pixToRem(30);
+    border: none;
+    outline: none;
+  }
+  
+  .promo__description {
+    line-height: $lh-bigger;
+    font-size: pixToRem(14);
+  }
+  
+  .promo__email::placeholder {
+    color: #C4C4C4;
+  }
+  
+  .promo__button {
+    padding: pixToRem(9) pixToRem(28);
+  }
+}

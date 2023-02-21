@@ -1,0 +1,67 @@
+﻿@import 'common/variables';
+@import 'common/functions';
+
+.offers::before {
+  content: "";
+  min-width: 188px;
+  min-height: 60px;
+  background-image: url("../img/truck.svg");
+  position: absolute;
+  right: 210px;
+  top: 60px;
+}
+
+.offers {
+  padding-top: 80px;
+  background-color: $clr-neutral-200;
+  position: relative;
+
+  .offers__title {
+    font-weight: $fw-700;
+    font-size: pixToRem(24);
+  }
+
+  .offers__cards {
+    @include flex-row(pixToRem(16));
+    flex-wrap: wrap;
+    margin-top: pixToRem(38);
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding: 0;
+
+    .offers__card {
+      background-color: $clr-neutral-100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: pixToRem(20);
+      border: 1px solid transparent;
+      transition: border-color 0.5s ease;
+    }
+
+    .offers__card:hover {
+      border-color: $clr-primary-400
+    }
+
+    .offers__image {
+      margin: pixToRem(25) pixToRem(65) 0 pixToRem(65);
+    }
+
+    .offers__description {
+      font-size: pixToRem(14);
+      max-width: 22ch;
+      text-align: center;
+    }
+
+    .offers__price {
+      font-weight: $fw-500;
+      font-size: pixToRem(21);
+      letter-spacing: 0.05rem;
+    }
+
+    .offers__button-buy {
+      margin-bottom: pixToRem(25);
+    }
+  }
+}
+

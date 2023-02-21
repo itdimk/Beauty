@@ -1,0 +1,52 @@
+﻿@import 'common/variables';
+@import 'common/functions';
+
+.header__nav {
+  padding: pixToRem(17) 0;
+  color: $clr-neutral-800;
+}
+
+.header__nav-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: pixToRem(30);
+}
+
+.header__company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__logo {
+    display: flex;
+    margin-block: pixToRem(20);
+    align-items: center;
+    gap: pixToRem(20);
+
+    .header_title {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-size: pixToRem(36);
+      font-weight: $fw-700;
+      color: $clr-primary-400
+    }
+  }
+
+  .header__contacts {
+    @include flex-row(pixToRem(40));
+  }
+}
+
+.header__services {
+  width: 100%;
+  border-top: 1px solid $clr-neutral-200;
+
+  .header__services-items {
+    @include flex-row(pixToRem(40));
+    margin-block: pixToRem(30);
+  }
+}
+
