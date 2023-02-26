@@ -11,3 +11,9 @@
   border-radius: pixToRem(40);
   padding: pixToRem(12) pixToRem(26);
 }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .phone-number {
+    margin-inline: auto;
+  }
+}

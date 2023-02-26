@@ -16,36 +16,51 @@
 }
 
 .promo__card {
-  @include flex-row(pixToRem(65));
+  @include flex-row(pixToRem(25));
   justify-content: space-between;
   background-color: $clr-primary-400;
   color: $clr-neutral-100;
   padding: pixToRem(35) pixToRem(40);
   width: 100%;
   flex: 1;
-  
+
   .promo__left {
     @include flex-col(pixToRem(25));
     align-items: flex-start;
   }
-  
+
+  .promo__right {
+    max-width: 135px;
+  }
+
   .promo__email {
     padding: pixToRem(9) pixToRem(25);
     border-radius: pixToRem(30);
     border: none;
     outline: none;
   }
-  
+
   .promo__description {
     line-height: $lh-bigger;
     font-size: pixToRem(14);
   }
-  
+
   .promo__email::placeholder {
     color: #C4C4C4;
   }
-  
+
   .promo__button {
     min-width: max-content;
+  }
+  
+  .promo__title {
+    font-weight: $fw-700;
+    font-size: pixToRem(18);
+  }
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-width: 950px) {
+  .promo__envelope {
+    display: none;
   }
 }
